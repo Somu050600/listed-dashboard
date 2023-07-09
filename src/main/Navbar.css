@@ -1,20 +1,23 @@
 .nav-container{
     width: 280px;
-    height: 100vw;
+    height: calc(100vh - 80px);
     padding: 50px;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 40px;
+    left: 40px;
     background-color: black;
     color:#fff;
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
+    z-index: 999;
 }
 .nav-container a, a:active, a:visited{
     text-decoration: none;
     color: #fff;
 }
 .nav-logo{
+    width: 100%;
     margin: 10px 0;
 }
 .nav-logo strong{
@@ -23,5 +26,38 @@
     font-family: 'Montserrat', sans-serif;
 }
 .nav-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.nav-list a{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
 
+}
+.nav-list img{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%); 
+}
+.nav-list a span{
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-bottom{
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+.nav-bottom a{
+    padding-top: 20px;
+}
+@media only screen and (max-width: 600px){
+    .nav-container {
+        display: none;
+    }
 }

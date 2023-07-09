@@ -16,9 +16,9 @@ function Login(props) {
             <div className="login-apple">Apple Login</div>
           </div>
           <form action="" className="login-form">
-            <label htmlFor="email">Email Address</label>
+            <label for="email">Email Address</label>
             <input type="email" id="email" placeholder="Johndoe@gmail.com" />
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="········" />
             <a href="/">Forgot password?</a>
             <button type="submit">Sign In</button>

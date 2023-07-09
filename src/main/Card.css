@@ -1,0 +1,28 @@
+.card-container{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    min-width: 100px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.card-container div{
+    height: 33%;
+}
+.card-container div img{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+.card-container div:nth-child(2) span{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+.card-container div:nth-child(3) span{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
