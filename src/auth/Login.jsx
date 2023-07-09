@@ -62,9 +62,19 @@ function Login(props) {
           </div>
           <form action="" className="login-form">
             <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="Johndoe@gmail.com" />
+            <input
+              type="email"
+              id="email"
+              required="true"
+              placeholder="Johndoe@gmail.com"
+            />
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="········" />
+            <input
+              type="password"
+              id="password"
+              required="true"
+              placeholder="········"
+            />
             <a href="/home">Forgot password?</a>
             <button type="submit" onClick={handleSubmit}>
               Sign In
