@@ -1,0 +1,27 @@
+.nav-container{
+    width: 280px;
+    height: 100vw;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+}
+.nav-container a, a:active, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-logo{
+    margin: 10px 0;
+}
+.nav-logo strong{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-list{
+
+}
