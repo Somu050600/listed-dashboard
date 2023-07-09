@@ -37,7 +37,7 @@ function Login(props) {
           <strong>Sign In</strong>
           <span>Sign in to your account</span>
           <div className="social-media-login">
-            <div className="login-google">
+            <div className="login-google" onClick={handleSubmit}>
               <img src={process.env.PUBLIC_URL + "/icons/google.png"} alt="" />
               Google Login
               {/* <div style={{ display: "hidden" }}>
