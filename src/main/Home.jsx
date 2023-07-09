@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Card from "./Card";
 import Activities from "./Activities";
@@ -7,35 +7,49 @@ import Schedule from "./Schedule";
 import "./Home.css";
 
 function Home(props) {
+  const [isMenu, setIsMenu] = useState(false);
   const cards = [
     {
       title: "Total Revenue",
       count: "$2,129,430",
       img_url: "/icons/revenue.png",
+      color: "#DDEFE0",
     },
     {
       title: "Total Transitions",
       count: "1520",
       img_url: "/icons/Transactions.png",
+      color: "#F4ECDD",
     },
     {
       title: "Total Likes",
       count: "9721",
       img_url: "/icons/like.png",
+      color: "#EFDADA",
     },
     {
       title: "Total Users",
       count: "892",
       img_url: "/icons/users.png",
+      color: "#DEE0EF",
     },
   ];
   const cardsJson = JSON.stringify(cards);
   const cardsArray = JSON.parse(cardsJson);
+
+  const handleMenu = () => {
+    setIsMenu(!isMenu);
+  };
+
   return (
     <div className="home-container">
-      <Navbar />
+      <Navbar isMenu={isMenu} />
       <div className="home-main-container">
         <div className="home-header">
+          <div
+            className={isMenu ? "menu-icon2" : "menu-icon1"}
+            onClick={handleMenu}
+          ></div>
           <strong>Dashboard</strong>
           <div className="search-div">
             <input type="search" placeholder="Search..." />
@@ -54,17 +68,19 @@ function Home(props) {
               title={card.title}
               count={card.count}
               img_url={card.img_url}
+              color={card.color}
             />
           ))}
         </div>
         <div className="activities-container">
+          <span>Activities</span>
           <Activities />
         </div>
         <div className="home-bottom-container">
           <div className="products-container">
             <Products />
           </div>
-          <div className="schedule-container">
+          <div className="home-schedule-container">
             <Schedule />
           </div>
         </div>

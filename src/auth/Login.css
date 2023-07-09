@@ -47,10 +47,18 @@
     justify-content: space-between;
 }
 .social-media-login div{
+    display: flex;
+    align-items: center;
     width: 47%;
     padding: 10px;
     background-color: white;
     border-radius: 10px;
+    cursor: pointer;
+}
+.social-media-login div img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 .login-form-parent-container strong{
     margin: 10px 0;
@@ -65,8 +73,10 @@
     font-size: 16px;
     /* border: solid black; */
 }
-.login-form-parent-container a, a:link, a:visited{
-    color: #346BD4;
+.login-form-parent-container a, 
+.login-form-parent-container a:link, 
+.login-form-parent-container a:visited{
+    color: #346BD4 !important;
     text-decoration: none;
 }
 .login-form{
@@ -98,6 +108,7 @@
     border-radius: 10px;
     font-size: 16px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 

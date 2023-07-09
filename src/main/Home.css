@@ -66,6 +66,12 @@
     border-radius: 20px;
     padding: 20px;
 }
+.activities-container span{
+    position: absolute;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    transform: translateX(30px);
+}
 .home-bottom-container{
     display: flex;
     justify-content: space-between;
@@ -79,7 +85,7 @@
     background-color: white;
     border-radius: 20px;
 }
-.schedule-container{
+.home-schedule-container{
     width: 49%;
     height: 100%;
     padding: 20px;
@@ -109,12 +115,84 @@
     .home-header img{
         margin: 0 10px;
     }
+    .menu-icon1{
+        margin: 20px 10px;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin-right: 10px;
+        border-radius: 1.5px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .menu-icon1::before{
+        position: absolute;
+        content:'';
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        border-radius: 1px;
+        transform: translateY(-7px);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .menu-icon1::after{
+        position: absolute;
+        content:'';
+        width: 20px;
+        height: 2px;
+        background-color: black;
+        border-radius: 1px;
+        transform: translateY(8px);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .menu-icon2{
+        margin: 20px 10px;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin-right: 10px;
+        border-radius: 1.5px;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .menu-icon2::before{
+        position: absolute;
+        content:'';
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .menu-icon2::after{
+        position: absolute;
+        content:'';
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        border-radius: 1px;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        z-index: 999;
+    }
     .cards-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .home-bottom-container{
         flex-direction: column;
         height: 75%;
+    }
+    .activities-container span{
+        display: none;
     }
     .products-container{
         height: 47.5%;
@@ -123,7 +201,7 @@
         background-color: white;
         border-radius: 20px;
     }
-    .schedule-container{
+    .home-schedule-container{
         height: 47.5%;
         width: 100%;
         padding: 20px;
