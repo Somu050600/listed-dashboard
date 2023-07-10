@@ -69,7 +69,7 @@ function Home(props) {
           />
           <img
             style={{ borderRadius: "50%" }}
-            src={profilePhoto ? "profilePhoto" : userPlaceholderAlt}
+            src={profilePhoto ? profilePhoto : userPlaceholderAlt}
             alt=""
           />
         </div>
