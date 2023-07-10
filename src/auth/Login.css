@@ -46,16 +46,30 @@
     align-items: center;
     justify-content: space-between;
 }
-.social-media-login div{
+/* .social-media-login div{
     display: flex;
     align-items: center;
     width: 47%;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
     cursor: pointer;
+    border: solid black;
+} */
+.login-apple{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 9px 10px;
+    padding-right: 0;
+    width: 47%;
+    cursor: pointer;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #3C4043;
+    font-weight: 520;
 }
 .social-media-login div img{
+    /* display: none; */
     width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -126,5 +140,10 @@
     .login-form-parent-container{
         min-width: 90vw;
         width: 45%;
+    }
+    .login-apple{
+        padding: 9px 9px;
+        padding-right: 0;
+        width: 47%;
     }
 }

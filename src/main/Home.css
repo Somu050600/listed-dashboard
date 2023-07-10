@@ -34,9 +34,10 @@
     outline: none;
 }
 .home-header img{
-    height: 20px;
-    width: 20ppx;
-    margin-left:40px;
+    height: 25px;
+    width: 25ppx;
+    margin-left: 40px;
+    cursor: pointer;
 }
 .search-div{
     padding: 0 10px;

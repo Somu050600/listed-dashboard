@@ -38,9 +38,7 @@ function Login(props) {
           <span>Sign in to your account</span>
           <div className="social-media-login">
             <div className="login-google" onClick={handleSubmit}>
-              <img src={process.env.PUBLIC_URL + "/icons/google.png"} alt="" />
-              Google Login
-              {/* <div style={{ display: "hidden" }}>
+              <div style={{ display: "hidden" }}>
                 <GoogleOAuthProvider clientId="53240284106-3n37jfpcdv3ke7p6gb2amnhgm1fecds4.apps.googleusercontent.com">
                   <GoogleLogin
                     isSignedIn={true}
@@ -53,7 +51,7 @@ function Login(props) {
                     useOneTap
                   />
                 </GoogleOAuthProvider>
-              </div> */}
+              </div>
             </div>
             <div className="login-apple" onClick={handleSubmit}>
               <img src={process.env.PUBLIC_URL + "/icons/apple.png"} alt="" />

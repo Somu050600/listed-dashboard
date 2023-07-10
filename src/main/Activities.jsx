@@ -21,7 +21,7 @@ const Activities = () => {
   }, []);
 
   useEffect(() => {
-    if (playerData.length > 0) {
+    if (playerData.length > 0 && !chartInstance) {
       const ctx = chartRef.current.getContext("2d");
 
       if (chartInstance) {
@@ -105,7 +105,7 @@ const Activities = () => {
 
       setChartInstance(newChartInstance);
     }
-  }, [playerData]);
+  }, [playerData, chartInstance]);
 
   // Helper function to get random players from the playerData array
   const getRandomPlayers = (players, minCount, maxCount) => {

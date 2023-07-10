@@ -21,7 +21,7 @@ const Products = () => {
   }, []);
 
   useEffect(() => {
-    if (playerData.length > 0) {
+    if (playerData.length > 0 && !chartInstance) {
       const ctx = chartRef.current.getContext("2d");
 
       if (chartInstance) {
@@ -90,7 +90,7 @@ const Products = () => {
 
       setChartInstance(newChartInstance);
     }
-  }, [playerData]);
+  }, [playerData, chartInstance]);
 
   // Helper function to get a random player from the playerData array
   const getRandomPlayer = (players) => {

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Card from "./Card";
 import Activities from "./Activities";
@@ -7,7 +8,14 @@ import Schedule from "./Schedule";
 import "./Home.css";
 
 function Home(props) {
+  const location = useLocation();
+
   const [isMenu, setIsMenu] = useState(false);
+  const queryParams = new URLSearchParams(location.search);
+  const profilePhoto = queryParams.get("photo");
+  // const name = queryParams.get("name");
+  const userPlaceholderAlt = process.env.PUBLIC_URL + "/icons/user.png";
+
   const cards = [
     {
       title: "Total Revenue",
@@ -59,7 +67,11 @@ function Home(props) {
             src={process.env.PUBLIC_URL + "/icons/notification.png"}
             alt="img"
           />
-          <img src={process.env.PUBLIC_URL + "/icons/user.png"} alt="img" />
+          <img
+            style={{ borderRadius: "50%" }}
+            src={profilePhoto ? "profilePhoto" : userPlaceholderAlt}
+            alt=""
+          />
         </div>
         <div className="cards-container">
           {cardsArray.map((card, index) => (
