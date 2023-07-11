@@ -43,7 +43,7 @@ const Activities = () => {
         borderColor: getRandomColor(), // Generate a random color for each line
         backgroundColor: "transparent",
         fill: false,
-        lineTension: 0.4, // Adjust the line tension to make the lines curvy (0: straight lines, 1: very curvy lines)
+        lineTension: 0.3, // Adjust the line tension to make the lines curvy (0: straight lines, 1: very curvy lines)
       }));
 
       const labels = [

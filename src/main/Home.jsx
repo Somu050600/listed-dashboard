@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import Card from "./Card";
@@ -13,8 +13,12 @@ function Home(props) {
   const [isMenu, setIsMenu] = useState(false);
   const queryParams = new URLSearchParams(location.search);
   const profilePhoto = queryParams.get("photo");
-  // const name = queryParams.get("name");
+  const name = queryParams.get("name");
   const userPlaceholderAlt = process.env.PUBLIC_URL + "/icons/user.png";
+
+  useEffect(() => {
+    document.title = name ? "Hi " + name : "Welcome Home!";
+  }, [name]);
 
   const cards = [
     {
