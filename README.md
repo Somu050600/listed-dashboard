@@ -1,29 +1,36 @@
-This react app is deployed on Netlify - https://listed-board.netlify.app/ 
+# 📊 Listed Dashboard - React Data Visualization App
 
-# Getting Started with Create React App
+A fully responsive single-page React application that fetches data from public APIs using **Axios** and presents insightful data visualizations with **Chart.js**. The app ensures an optimal user experience across devices with various screen sizes and orientations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Features
 
-## Available Scripts
+- **Dynamic Data Fetching**: Utilizes **Axios** to fetch data from public APIs seamlessly.
+- **Interactive Visualizations**: Leverages **Chart.js** to display dynamic and informative charts and graphs.
+- **Responsive Design**: Designed with a mobile-first approach, ensuring the app adapts beautifully to various devices.
+- **Modern UI/UX**: A clean, intuitive user interface that enhances data exploration and analysis.
 
-To install all the dependencies and then start the project, you can run:
+## 🌐 Live Demo
 
-### `npm install` 
-### `npm start`
+This React app is deployed on Netlify. Check out the live version here: [Listed Dashboard](https://listed-board.netlify.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖥️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: Front-end library for building user interfaces.
+- **Axios**: Promise-based HTTP client for fetching data.
+- **Chart.js**: Flexible and customizable library for creating visual data representations.
+- **CSS**: For styling and ensuring responsiveness.
 
+## 📸 Screenshots
 
-### `npm run build`
+*Include screenshots or GIFs here to showcase the UI and features.*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/Somu050600/listed-assignment.git
+   cd listed-assignment
+   npm install
+   npm start
+
