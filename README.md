@@ -29,8 +29,8 @@ This React app is deployed on Netlify. Check out the live version here: [Listed 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Somu050600/listed-assignment.git
-   cd listed-assignment
+   git clone https://github.com/Somu050600/listed-dashboard.git
+   cd listed-dashboard
    npm install
    npm start
 
