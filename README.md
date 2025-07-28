@@ -22,7 +22,8 @@ This React app is deployed on Netlify. Check out the live version here: [Listed 
 
 ## 📸 Screenshots
 
-*Include screenshots or GIFs here to showcase the UI and features.*
+<img width="1440" height="1024" alt="image" src="https://github.com/user-attachments/assets/15db3593-957f-4e05-bd2b-c0d766b5f773" />
+
 
 ## 📦 Installation
 
